@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>열한시 키퍼 주간 일정 등록</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 정상적인 컨텐츠 컨테이너 -->
+    <div class="container" id="contentContainer">
+        <div class= "company-header">
+            <img src= "images/eleven_circle.png" alt="회사 로고" class= "company-logo">
+            열한시 키퍼
+        </div>
+        <h1>📅 주간 일정 등록</h1>
+        
+        <div class="week-display" id="weekDisplay">
+            <span class="week-display"></span>
+        </div>
+
+        <form id="scheduleForm">
+            <div id="daysContainer">
+                <!-- 요일은 JavaScript로 동적 생성됩니다 -->
+            </div>
+            <button type="submit" class="submit-button">일정 등록하기</button>
+            <button type="button" class="vacation-button" id="vacationButton">다음주는 키퍼하지 않을래요</button>
+        </form>
+
+        <div class="success-message">
+            일정이 성공적으로 등록되었습니다!
+        </div>
+        <div class="vacation-message">
+            성공적으로 등록되었습니다!
+        </div>
+    </div>
+
+    <!-- 에러 컨테이너 -->
+    <div class="container" id="errorContainer" style="display: none;">
+        <div class="company-header">
+            <img src="images/eleven_circle.png" alt="회사 로고" class="company-logo">
+            열한시 키퍼
+        </div>
+        <div class="error-content">
+            <h1>⚠️ 접근 오류</h1>
+            <p>유효하지 않은 사용자입니다. 관리자에게 문의해주세요.</p>
+        </div>
+    </div>
+    <script src="js/env.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
